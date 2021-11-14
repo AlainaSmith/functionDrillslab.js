@@ -4,17 +4,28 @@
   Call the function.
 */
 
-//CODE HERE
+function helloWorld(){
+  console.log('Hello, World!')
+}
 
+helloWorld()
 
 ////////////////// PROBLEM 2 ////////////////////
 /*
   Create a function called printName which takes in a person's name and console logs it.
   Ex. If 'Cameron' were passed in as the argument, Cameron would be console logged.
   Call the function, passing in an argument.
+  https://www.codecademy.com/courses/introduction-to-javascript/lessons/functions/exercises/default-parameters
 */
 
-//CODE HERE
+function printName(){
+  console.log('Cameron')
+}
+
+printName()
+
+//QUESTION When I call the argument, Cameron is console logged regardless whether I pass the name in
+//as an argument or not. 
 
 
 ////////////////// PROBLEM 3 ////////////////////
@@ -28,18 +39,34 @@
   Make sure to call your function and pass in an argument.
 */
 
-//CODE HERE
+
+function greeting(name){
+  console.log('Hello, ' + 'name')
+}
+
+greeting('name')
+
+
+
+
 
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
-  Create a function called add that takes in two parameters 
-  Inside, convert the arguments to be numbers (just in case strings get sent in)
+  Create a function called add that takes in two parameters Inside, 
+  convert the arguments to be numbers (just in case strings get sent in)
   The add function should RETURN the two parameters added together.
-  Create a variable outside the function called 'sum' and set it equal to add invoked (called), passing in 2 arguments.
+  Create a variable outside the function called 'sum' and set it equal to add 
+  invoked (called), passing in 2 arguments.
 */
 
-//CODE HERE
+function add(x, y){
+  return x + y
+} 
+const sum = add(1, 2)
+console.log(sum)
+
+
 
 
 ////////////////// PROBLEM 5 ////////////////////
@@ -51,7 +78,64 @@
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
 
-//CODE HERE
+
+function nameCheck(name){
+  if (name === 'Steven'){
+    return 'What is up Steven?'
+} else if (name === 'Bryan') {
+  return 'Hey Bryan!'
+} else 
+  return 'Cool name, NAMEPARAM'
+}
+let nameGreeting = nameCheck('Steven')
+nameCheck('Steven')
+
+/* PRIOR ATTEMPTS
+function nameCheck(name){
+  if (nameCheck('Steven')){
+    console.log('What is up Steven?')
+} else if (nameCheck('Bryan')){
+  console.log('Hey Bryan!')
+} else 
+  console.log('Cool name, NAMEPARAM')
+}
+let nameGreeting = namecheck('Steven')
+
+
+function nameCheck(name){
+  
+ return 'What is up, ' + 'Steven?'
+ return 'Hey, ' + 'Bryan!'
+ return 'Cool name, ' + 'NAMEPARAM'
+}
+ let nameGreeting = nameCheck(NAMEPARAM)
+ console.log(nameGreeting)
+
+
+
+function nameCheck(name){
+  return {
+         first: nameCheck(Steven),
+         second: nameCheck(Bryan),
+         third: nameCheck(NAMEPARAM)
+     }
+  let nameGreeting = nameCheck(NAMEPARAM)
+  namecheck(name)
+  console.log(nameGreeting)
+    }
+
+
+function nameCheck(Steven){
+if (nameCheck('Steven')){
+  console.log('What is up Steven?')
+} else if (nameCheck('Bryan')){
+  console.log('Hey Bryan!')
+} else if (nameCheck('Cool name, NAMEPARAM')){
+  console.log('Cool name, NAMEPARAM')
+}
+let nameGreeting = nameCheck(Steven)
+console.log('nameGreeting')
+*/
 
 
 ////////////////// PROBLEM 6 ////////////////////
@@ -64,7 +148,23 @@
   Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
 */
 
-//CODE HERE
+function faveColorFinder(color){
+  if (color === 'red'){
+    return 'red is a great color'
+} else if (color === 'green') {
+  return 'green is a solid favorite color'
+} else if (color === 'black') {
+  return 'so trendy'
+} else {
+  return 'you need to evalute your favorite color choice'
+}
+}
+let colorRating = faveColorFinder('red')
+faveColorFinder('red')
+
+
+
+
 
 
 ////////////////// PROBLEM 7 ////////////////////
