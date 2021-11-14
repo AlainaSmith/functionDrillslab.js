@@ -162,32 +162,43 @@ function faveColorFinder(color){
 let colorRating = faveColorFinder('red')
 faveColorFinder('red')
 
-
-
-
-
-
 ////////////////// PROBLEM 7 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 /*
-  Create a function called printAllNames that takes in a single argument (an array of names).
+  Create a function called printAllNames that takes in a single argument 
+  (an array of names).
   Using a for loop, iterate over that array and console log each name.
   Call the function, passing in the `namesArr` array (above).
 */
+function printAllNames(names){
+for(let i = 0; i < namesArr.length; i++){
+console.log(names[i])
+}
+}
+printAllNames(namesArr)
 
-//CODE HERE
-
+//Resource: Prob #3 Making Decisions Lab 2
 
 ////////////////// PROBLEM 8 ////////////////////
 /*
   Create a function called thatsOdd that takes in a single argument (a number).
   Using conditional logic, if the number is even, return 'That's not odd!'
   Otherwise, return 'That is odd indeed!'
-  Outside the function, create a variable called `oddChecker` and set it equal to your function invoked, making sure to pass in an argument.
+  Outside the function, create a variable called `oddChecker` 
+  and set it equal to your function invoked, 
+  making sure to pass in an argument.
 */
+let number = 10
 
-//CODE HERE
-
+function thatsOdd(number){
+  if(number % 2 === 0){
+    return 'Thats not odd!'
+  } else {
+    return 'That is odd indeed!'
+  }
+}
+let oddChecker = thatsOdd()
+thatsOdd(number)
 
 ////////////////// PROBLEM 9 ////////////////////
 let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
@@ -200,7 +211,7 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
   Return the answers array inside of the function to a variable called `arrayEvaluator`.
 */
 
-//CODE HERE
+functino bigOrSmallArray(arr)
 
 
 ////////////////// PROBLEM 10 ////////////////////
